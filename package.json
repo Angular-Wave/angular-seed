@@ -1,0 +1,28 @@
+{
+  "name": "angular-seed",
+  "version": "0.0.1",
+  "description": "A starter template for AngularTS app",
+  "main": "index.js",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --open --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angular-Wave/angular-seed.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "AngularTS",
+    "Angular seed"
+  ],
+  "author": "Anatoly Ostrovsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Angular-Wave/angular-seed/issues"
+  },
+  "homepage": "https://github.com/Angular-Wave/angular-seed#readme",
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}
