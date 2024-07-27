@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/Angular-Wave/angular-seed#readme",
   "dependencies": {
-    "@angular-wave/angular.ts": "latest"
+    "@angular-wave/angular.ts": "latest",
+    "modern-normalize": "^2.0.0"
   },
   "devDependencies": {
     "@web/dev-server": "^0.4.6"
