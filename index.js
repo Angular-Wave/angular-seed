@@ -1,1 +1,1 @@
-console.log("test")
+import "@angular-wave/angular.ts";

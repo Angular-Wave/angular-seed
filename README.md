@@ -18,5 +18,7 @@ This project preconfigured the project with [Web Dev Server](https://modern-web.
 make start
 ```
 
+Now open your browser to `localhost:4000/`
+
 
 [angularts]: https://github.com/Angular-Wave/angular.ts
