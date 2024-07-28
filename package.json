@@ -29,9 +29,10 @@
     "modern-normalize": "latest"
   },
   "devDependencies": {
-    "@web/dev-server": "latest",
-    "@web/rollup-plugin-html": "latest",
     "@rollup/plugin-commonjs": "latest",
+    "@web/dev-server": "latest",
+    "@web/rollup-plugin-copy": "^0.5.1",
+    "@web/rollup-plugin-html": "latest",
     "husky": "latest",
     "lint-staged": "latest",
     "prettier": "latest",
