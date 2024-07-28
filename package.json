@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "web-dev-server --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
     "prepare": "husky"
   },
   "repository": {
@@ -29,9 +30,13 @@
   },
   "devDependencies": {
     "@web/dev-server": "latest",
+    "@web/rollup-plugin-html": "latest",
+    "@rollup/plugin-commonjs": "latest",
     "husky": "latest",
     "lint-staged": "latest",
-    "prettier": "latest"
+    "prettier": "latest",
+    "rollup": "latest",
+    "rollup-plugin-terser": "latest"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
