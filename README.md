@@ -1,6 +1,6 @@
 # `angular-seed` — the seed for AngularTS apps
 
-This project is an application skeleton for a typical [AngularTS][angularts] web app. You can use it to quickly bootstrap your next project. 
+This project is an application skeleton for a typical [AngularTS][angularts] web app. You can use it to quickly bootstrap your next project.
 
 It contains a sample AngularTS application and is preconfigured with all the necessary tools for developing, testing and deployment.
 
@@ -19,6 +19,5 @@ make start
 ```
 
 Now open your browser to `localhost:4000/`
-
 
 [angularts]: https://github.com/Angular-Wave/angular.ts
