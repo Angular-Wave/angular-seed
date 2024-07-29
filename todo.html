@@ -28,16 +28,40 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body ng-app ng-cloak>
-    <div id="app" ng-init="x='AngularTS'">
-      <h1>{{ x }} Seed</h1>
-      A friendly starter template to set you up for success
+  <body ng-app="todo" ng-cloak>
+    <style>
+      .done-true {
+        text-decoration: line-through;
+        color: grey;
+      }
 
-      <section>
-        <a href="/todo.html">Todo App</a>
-      </section>
+      ul {
+        padding: 0;
+      }
+
+      header,
+      li {
+        padding: 0 0 1rem 0;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+
+    <div ng-controller="TodoCtrl as $ctrl">
+      <h3>Todos</h3>
+      <button ng-click="$ctrl.archive()">Archive</button>
+      <ul>
+        <li ng-repeat="todo in $ctrl.list.tasks" class="done-{{todo.done}}">
+          {{ todo.task }}
+          <input type="checkbox" ng-click="todo.done = !todo.done" />
+        </li>
+      </ul>
+
+      <form ng-submit="$ctrl.add()">
+        <input type="text" ng-model="$ctrl.newTodo" ng-required="true" />
+        <button type="submit">Add</button>
+      </form>
     </div>
-
-    <script type="module" src="/index.js"></script>
+    <script type="module" src="./apps/todo/todo-app.js"></script>
   </body>
 </html>

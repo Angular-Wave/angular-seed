@@ -14,4 +14,8 @@ body {
 
 #app {
   text-align: center;
+
+  & section {
+    padding-top: 1rem;
+  }
 }
