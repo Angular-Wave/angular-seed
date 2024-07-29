@@ -57,8 +57,8 @@
         </li>
       </ul>
 
-      <form ng-submit="$ctrl.add()">
-        <input type="text" ng-model="$ctrl.newTodo" ng-required="true" />
+      <form ng-submit="$ctrl.add(newTodo)">
+        <input type="text" ng-model="newTodo" ng-required="true" />
         <button type="submit">Add</button>
       </form>
     </div>

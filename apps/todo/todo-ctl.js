@@ -1,19 +1,25 @@
-import Todo from "./todo";
 import ToDoList from "./todo-list";
 
 export default class TodoController {
   constructor() {
     /** @type {ToDoList} */
     this.list = new ToDoList();
-    /** @type {Todo?} */
-    this.newTodo;
   }
 
-  add() {
-    this.list.tasks.push(new Todo(this.newTodo));
+  /**
+   * Create a new task
+   * @param {String} task
+   * @return {void}
+   */
+  add(task) {
+    this.list.add(task);
   }
 
+  /**
+   * Delete all finished tasks
+   * @return {void}
+   */
   archive() {
-    this.list.tasks = this.list.tasks.filter((task) => !task.done);
+    this.list.archive();
   }
 }
