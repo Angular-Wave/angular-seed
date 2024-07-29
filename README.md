@@ -1,8 +1,9 @@
 # `angular-seed` — the seed for AngularTS apps
 
 This project is an application skeleton for a typical [AngularTS][angularts] web app. You can use it to quickly bootstrap your next project.
-
 It contains a sample AngularTS application and is preconfigured with all the necessary tools for developing, testing and deployment.
+In order to leave your options open, it attempts to be as minimalist as possible. None of the tools are specific to or even necessary
+for AngularTS development and would apply equally well to any generic web project.
 
 ### Install Dependencies
 
@@ -12,7 +13,8 @@ make setup
 
 ### Run the Application
 
-This project preconfigured the project with [Web Dev Server](https://modern-web.dev/docs/dev-server/overview/), an optimal solution for lightweight and buildless workflows. The simplest way to start the server is:
+This project preconfigured the project with [Web Dev Server](https://modern-web.dev/docs/dev-server/overview/), an optimal solution for lightweight and buildless workflows.
+The simplest way to start the server is:
 
 ```
 make start
@@ -31,4 +33,10 @@ To generate a production-ready bundle with minified HTML, CSS, and JavaScript, r
 make build
 ```
 
-Your app should be available in `/dist` folder and can then be uploaded to static server.
+This will execute the following tasks:
+
+- Minified HTML with [Rollup Plugin HTML](https://modern-web.dev/docs/building/rollup-plugin-html/)
+- Bundled JS with [Rollup](https://rollupjs.org/) and minified it with terser [Terser](https://terser.org/)
+- Bundled and minified CSS with [Lightning CSS](https://lightningcss.dev/)
+
+Your app should be available in `/dist` folder and can then be uploaded to a static server.

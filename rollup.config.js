@@ -5,10 +5,6 @@ import { rollupPluginHTML as html } from "@web/rollup-plugin-html";
 import { copy } from "@web/rollup-plugin-copy";
 import { bundle } from "lightningcss";
 
-// `npm run build` -> `production` is true
-// `npm run dev` -> `production` is false
-const production = !process.env.ROLLUP_WATCH;
-
 export default {
   input: "index.html",
   output: {
@@ -17,8 +13,7 @@ export default {
   },
   plugins: [
     html({
-      minify: !production,
-      flattenOutput: false,
+      minify: true,
       transformAsset: (_content, filePath) => {
         if (filePath.endsWith(".css")) {
           let { code } = bundle({
@@ -32,6 +27,6 @@ export default {
     copy({ patterns: "./*.{json,txt}", exclude: "node_modules" }),
     resolve(), // tells Rollup how to find date-fns in node_modules
     commonjs(), // converts date-fns to ES modules
-    production && terser(), // minify, but only in production
+    terser(),
   ],
 };
