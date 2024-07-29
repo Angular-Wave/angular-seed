@@ -35,7 +35,7 @@ export default [
   },
 
   {
-    input: "todo.html",
+    input: "./apps/todo/todo.html",
     output: {
       dir: "dist",
       entryFileNames: "[name].[hash].js",

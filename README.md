@@ -5,6 +5,10 @@ It contains a sample AngularTS application and is preconfigured with all the nec
 In order to leave your options open, it attempts to be as minimalist as possible. None of the tools are specific to or even necessary
 for AngularTS development and would apply equally well to any generic web project.
 
+For inspiration, the seed comes bundled with the following apps under `apps` folder:
+
+- A todo list
+
 ### Install Dependencies
 
 ```
