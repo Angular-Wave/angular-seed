@@ -30,14 +30,15 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-terser": "latest",
     "@web/dev-server": "latest",
-    "@web/rollup-plugin-copy": "^0.5.1",
+    "@web/rollup-plugin-copy": "latest",
     "@web/rollup-plugin-html": "latest",
     "husky": "latest",
+    "lightningcss": "latest",
     "lint-staged": "latest",
     "prettier": "latest",
-    "rollup": "latest",
-    "rollup-plugin-terser": "latest"
+    "rollup": "latest"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

@@ -1,8 +1,9 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import { terser } from "rollup-plugin-terser";
+import terser from "@rollup/plugin-terser";
 import { rollupPluginHTML as html } from "@web/rollup-plugin-html";
 import { copy } from "@web/rollup-plugin-copy";
+import { bundle } from "lightningcss";
 
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
@@ -16,7 +17,17 @@ export default {
   },
   plugins: [
     html({
-      minify: true,
+      minify: !production,
+      flattenOutput: false,
+      transformAsset: (_content, filePath) => {
+        if (filePath.endsWith(".css")) {
+          let { code } = bundle({
+            filename: filePath,
+            minify: true,
+          });
+          return new TextDecoder("utf-8").decode(code);
+        }
+      },
     }),
     copy({ patterns: "./*.{json,txt}", exclude: "node_modules" }),
     resolve(), // tells Rollup how to find date-fns in node_modules
