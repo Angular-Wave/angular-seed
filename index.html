@@ -28,7 +28,7 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body ng-app ng-cloak>
+  <body ng-app="version" ng-cloak>
     <div id="app" ng-init="x='AngularTS'">
       <h1>{{ x }} Seed</h1>
       A friendly starter template to set you up for success
@@ -37,6 +37,10 @@
         <a href="/apps/todo/todo.html">Todo App</a>
       </section>
     </div>
+
+    <small id="footer" ng-controller="VersionController as $ctrl">
+      version: {{ $ctrl.version }}
+    </small>
 
     <script type="module" src="/index.js"></script>
   </body>
