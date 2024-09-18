@@ -12,6 +12,8 @@
 
     <title>AngularTS Seed</title>
     <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/apps/todo/todo.css" />
+
     <meta name="description" content="" />
 
     <meta property="og:title" content="" />
@@ -29,24 +31,6 @@
   </head>
 
   <body ng-app="todo" ng-cloak>
-    <style>
-      .done-true {
-        text-decoration: line-through;
-        color: grey;
-      }
-
-      ul {
-        padding: 0;
-      }
-
-      header,
-      li {
-        padding: 0 0 1rem 0;
-        display: flex;
-        justify-content: space-between;
-      }
-    </style>
-
     <div ng-controller="TodoCtrl as $ctrl">
       <h3>Todos</h3>
       <button ng-click="$ctrl.archive()">Archive</button>
