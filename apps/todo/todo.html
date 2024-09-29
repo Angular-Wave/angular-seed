@@ -35,7 +35,7 @@
       <h3>Todos</h3>
       <button ng-click="$ctrl.archive()">Archive</button>
       <ul>
-        <li ng-repeat="todo in $ctrl.list.tasks" class="done-{{todo.done}}">
+        <li ng-repeat="todo in $ctrl.tasks" class="done-{{todo.done}}">
           {{ todo.task }}
           <input type="checkbox" ng-click="todo.done = !todo.done" />
         </li>
