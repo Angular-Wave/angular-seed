@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A starter template for AngularTS app",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "serve": "web-dev-server --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
