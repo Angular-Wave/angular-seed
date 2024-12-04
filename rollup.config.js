@@ -18,7 +18,7 @@ const plugins = [
       }
     },
   }),
-  copy({ patterns: "./*.{json,txt,html}", exclude: "node_modules" }),
+  copy({ patterns: "./*.{txt,html}", exclude: "node_modules" }),
   resolve(), // tells Rollup how to find date-fns in node_modules
   commonjs(), // converts date-fns to ES modules
   terser(),
