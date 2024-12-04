@@ -11,7 +11,8 @@
     />
 
     <title>AngularTS Seed</title>
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/apps/router/router.css" />
+
     <meta name="description" content="" />
 
     <meta property="og:title" content="" />
@@ -24,25 +25,13 @@
     <link rel="icon" href="/assets/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/icon.png" />
 
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body ng-app="version" ng-cloak>
-    <div id="app" ng-init="x='AngularTS'">
-      <h1>{{ x }} Seed</h1>
-      A friendly starter template to set you up for success
-
-      <section>
-        <a href="/apps/todo/todo.html">Todo App</a>
-        <a href="/apps/router/router.html">Router App</a>
-      </section>
-    </div>
-
-    <small id="footer" ng-controller="VersionController as $ctrl">
-      version: {{ $ctrl.version }}
-    </small>
-
-    <script type="module" src="/index.js"></script>
+  <body ng-app="router" ng-cloak>
+    View
+    <ng-view></ng-view>
+    <script type="module" src="./router.js"></script>
   </body>
 </html>
