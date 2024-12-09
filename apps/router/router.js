@@ -4,7 +4,6 @@ window.angular.module("router", []).config([
   "$stateProvider",
   "$locationProvider",
   ($stateProvider, $locationProvider) => {
-    $locationProvider.hashPrefixValue = "";
     $locationProvider.html5Mode({
       enabled: true,
       requireBase: false,
