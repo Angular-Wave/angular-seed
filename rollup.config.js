@@ -18,7 +18,7 @@ const plugins = [
       }
     },
   }),
-  copy({ patterns: "./*.{txt,html}", exclude: "node_modules" }),
+  copy({ patterns: "./*.{txt}", exclude: "node_modules" }),
   resolve(), // tells Rollup how to find date-fns in node_modules
   commonjs(), // converts date-fns to ES modules
   terser(),
@@ -26,7 +26,7 @@ const plugins = [
 
 export default [
   {
-    input: "index.html",
+    input: "./index.html",
     output: {
       dir: "dist",
       entryFileNames: "[name].[hash].js",
