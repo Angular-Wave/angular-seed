@@ -138,7 +138,6 @@ node_modules/
 .sourcemaps
 dist/
 
-
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -150,3 +149,7 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+
+src/main/webapp/**.js
+src/main/webapp/**.html
+src/main/webapp/**.css

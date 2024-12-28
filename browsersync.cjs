@@ -102,14 +102,14 @@ function cleanBundle() {
   const files = fs.readdirSync(outputDir);
 
   files.forEach((file) => {
+    if (file === "WEB-INF") {
+      return;
+    }
     const filePath = path.join(outputDir, file);
     const fileStat = fs.statSync(filePath);
 
     if (fileStat.isFile()) {
-      const ext = path.extname(file).toLowerCase();
-      if ([".css", ".html", ".js"].includes(ext)) {
-        fs.unlinkSync(filePath);
-      }
+      fs.unlinkSync(filePath);
     } else if (fileStat.isDirectory()) {
       fs.rmdirSync(filePath, { recursive: true });
     }
