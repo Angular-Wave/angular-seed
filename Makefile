@@ -15,7 +15,7 @@ setup: clean
 
 # Run server in dev mode
 serve:
-	@npm run serve
+	$(MAKE) -j 2 frontend-serve backend-serve
 
 # Run prettier source
 pretty:
@@ -31,3 +31,9 @@ clean_build:
 		echo "Removing $(BUILD_DIR)..."; \
 		rm -r "$(BUILD_DIR)"; \
 	fi
+
+frontend-serve:
+	@node browsersync.cjs	
+
+backend-serve:
+	./mvnw liberty:dev
