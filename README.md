@@ -1,13 +1,16 @@
 # `angular-seed` — the seed for AngularTS apps
 
-This project is an application skeleton for a typical [AngularTS][angularts] web app. You can use it to quickly bootstrap your next project.
-It contains a sample AngularTS application and is preconfigured with all the necessary tools for developing, testing and deployment.
+This project is an application skeleton for a standalone [AngularTS][angularts] web app. You can use it to quickly bootstrap your next project.
+It contains several sample AngularTS applications and is preconfigured with all the necessary tools for developing, testing and deployment.
 In order to leave your options open, it attempts to be as minimalist as possible. None of the tools are specific to or even necessary
-for AngularTS development and would apply equally well to any generic web project.
+for AngularTS development and would apply equally well to any generic web project. And since AngularTS is oriented primarily at server-rendered applications,
+the seed also attempts to make itself embedable into back-end stack of your choice.
 
 For inspiration, the seed comes bundled with the following apps under `apps` folder:
 
 - A todo list
+- A router example
+- Ionic/Capacitor Mobile App example
 
 ### Install Dependencies
 

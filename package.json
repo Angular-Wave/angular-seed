@@ -2,12 +2,12 @@
   "name": "angular-seed",
   "version": "0.0.1",
   "description": "A starter template for AngularTS app",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "serve": "web-dev-server --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
+    "build:watch": "rollup -c -w",
     "prepare": "husky"
   },
   "repository": {
@@ -27,6 +27,12 @@
   "homepage": "https://github.com/Angular-Wave/angular-seed#readme",
   "dependencies": {
     "@angular-wave/angular.ts": "0.5.0",
+    "@capacitor/camera": "^6.1.2",
+    "@capacitor/core": "latest",
+    "@capacitor/filesystem": "^6.0.2",
+    "@capacitor/preferences": "^6.0.3",
+    "@capacitor/splash-screen": "latest",
+    "@ionic/pwa-elements": "^3.3.0",
     "modern-normalize": "latest",
     "web": "^0.0.2"
   },

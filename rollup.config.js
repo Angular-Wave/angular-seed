@@ -42,4 +42,13 @@ export default [
     },
     plugins: plugins,
   },
+
+  {
+    input: "./apps/ionic/ionic.html",
+    output: {
+      dir: "dist",
+      entryFileNames: "[name].[hash].js",
+    },
+    plugins: plugins,
+  },
 ];
