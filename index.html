@@ -31,7 +31,7 @@
   <body ng-app="version" ng-cloak>
     <div id="app" ng-init="x='AngularTS + JavaEE'">
       <h1>{{ x }} Seed</h1>
-      A friendly starter template to set you up for success
+      <div ng-include="'/hello'"></div>
     </div>
 
     <small id="footer" ng-controller="VersionController as $ctrl">

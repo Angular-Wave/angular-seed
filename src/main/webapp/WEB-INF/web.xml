@@ -7,4 +7,10 @@
         <welcome-file-list>
             <welcome-file>/index.html</welcome-file>
         </welcome-file-list>
+
+        <!-- Servlet Configuration -->
+        <servlet>
+            <servlet-name>RestApplication</servlet-name>
+            <servlet-class>com.demo.res.RestApplication</servlet-class>
+        </servlet>
 </web-app>
