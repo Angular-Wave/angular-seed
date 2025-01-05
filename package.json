@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-node-resolve": "latest",
     "@rollup/plugin-terser": "latest",
     "@web/dev-server": "latest",
     "@web/rollup-plugin-copy": "latest",

@@ -26,7 +26,7 @@ const plugins = [
 
 export default [
   {
-    input: "./index.html",
+    input: "./app/index.html",
     output: {
       dir: "dist",
       entryFileNames: "[name].[hash].js",
@@ -35,16 +35,7 @@ export default [
   },
 
   {
-    input: "./apps/todo/todo.html",
-    output: {
-      dir: "dist",
-      entryFileNames: "[name].[hash].js",
-    },
-    plugins: plugins,
-  },
-
-  {
-    input: "./apps/ionic/ionic.html",
+    input: "./app/apps/ionic/ionic.html",
     output: {
       dir: "dist",
       entryFileNames: "[name].[hash].js",
