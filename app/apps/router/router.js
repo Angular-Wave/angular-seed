@@ -4,7 +4,7 @@ window.angular.module("router", []).config([
   "$stateProvider",
   "$locationProvider",
   ($stateProvider, $locationProvider) => {
-    $locationProvider.html5Mode({
+    $locationProvider.setHtml5Mode({
       enabled: true,
       requireBase: false,
       rewriteLinks: false,
