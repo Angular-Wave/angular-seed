@@ -16,6 +16,6 @@ public class RestApplication extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("greeting", "Java success");
         request.setAttribute("counter", random.nextInt(100));
-        request.getRequestDispatcher("/index.jsp").forward(request, response);
+        request.getRequestDispatcher("/views/index.jsp").forward(request, response);
     }
 }

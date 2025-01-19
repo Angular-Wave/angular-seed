@@ -15,17 +15,18 @@ buildCssBundle();
 buildJsBundle();
 
 browserSync.init({
-  files: "./src/main",
+  files: "./src/main/**",
   injectChanges: false, // Equivalent to --no-inject-changes
-  cors: true, // Enable CORS support
+  cors: true,
   open: false, // Prevent auto-opening the browser (you can change this if needed)
+  reloadDelay: 500,
 });
 
 browserSync.watch(
   ["./index.js", "./apps/**/.js"],
   async function (event, file) {
     if (event === "change") {
-      buildJsBundle();
+      await buildJsBundle();
     }
   },
 );
@@ -34,7 +35,7 @@ browserSync.watch(
   ["./index.css", "./apps/**/.css"],
   async function (event, file) {
     if (event === "change") {
-      buildCssBundle();
+      await buildCssBundle();
     }
   },
 );
@@ -102,7 +103,7 @@ function cleanBundle() {
   const files = fs.readdirSync(outputDir);
 
   files.forEach((file) => {
-    if (file === "WEB-INF") {
+    if (file === "WEB-INF" || file === "views") {
       return;
     }
     const filePath = path.join(outputDir, file);
