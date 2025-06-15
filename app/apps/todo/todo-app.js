@@ -1,4 +1,4 @@
-import "@angular-wave/angular.ts";
+import { angular } from "@angular-wave/angular.ts";
 import TodoController from "./todo-ctl";
 
 /**
@@ -7,4 +7,4 @@ import TodoController from "./todo-ctl";
  * Its a great way to inject custom DOM behaviour into your server-rendered views.
  */
 
-window.angular.module("todo", []).controller("TodoCtrl", TodoController);
+angular.module("todo", []).controller("TodoCtrl", TodoController);
