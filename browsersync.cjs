@@ -23,7 +23,7 @@ browserSync.init({
 });
 
 browserSync.watch(
-  ["./index.js", "./apps/**/.js"],
+  ["./index.js", "./apps/**/*.js"],
   async function (event, file) {
     if (event === "change") {
       await buildJsBundle();
@@ -32,7 +32,7 @@ browserSync.watch(
 );
 
 browserSync.watch(
-  ["./index.css", "./apps/**/.css"],
+  ["./index.css", "./apps/**/*.css"],
   async function (event, file) {
     if (event === "change") {
       await buildCssBundle();
