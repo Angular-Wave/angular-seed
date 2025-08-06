@@ -19,7 +19,7 @@ serve:
 
 # Run prettier source
 pretty:
-	@npx prettier . --write
+	@npx prettier ./ --write --cache --log-level=silent
 
 # Build for production
 build: clean_build
