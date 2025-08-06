@@ -1,14 +1,14 @@
-import "@angular-wave/angular.ts";
+import { angular } from "@angular-wave/angular.ts";
 
-window.angular.module("router", []).config([
+angular.module("router", []).config([
   "$stateProvider",
   "$locationProvider",
   ($stateProvider, $locationProvider) => {
-    $locationProvider.setHtml5Mode({
+    $locationProvider.html5ModeConf = {
       enabled: true,
       requireBase: false,
       rewriteLinks: false,
-    });
+    };
     $stateProvider
       .state({
         name: "page1",

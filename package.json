@@ -27,10 +27,10 @@
   "homepage": "https://github.com/Angular-Wave/angular-seed#readme",
   "dependencies": {
     "@angular-wave/angular.ts": "latest",
-    "@capacitor/camera": "^6.1.2",
+    "@capacitor/camera": "latest",
     "@capacitor/core": "latest",
-    "@capacitor/filesystem": "^6.0.2",
-    "@capacitor/preferences": "^6.0.3",
+    "@capacitor/filesystem": "latest",
+    "@capacitor/preferences": "latest",
     "@capacitor/splash-screen": "latest",
     "@ionic/pwa-elements": "^3.3.0",
     "modern-normalize": "latest",
@@ -47,7 +47,8 @@
     "lightningcss": "latest",
     "lint-staged": "latest",
     "prettier": "latest",
-    "rollup": "latest"
+    "rollup": "latest",
+    "typescript": "latest"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

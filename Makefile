@@ -13,6 +13,11 @@ clean:
 setup: clean
 	@npm i web
 
+# TS check	
+check:
+	@echo "Typechecking Js"
+	./node_modules/.bin/tsc 
+
 # Run server in dev mode
 serve:
 	@npm run serve

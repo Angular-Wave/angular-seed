@@ -35,7 +35,7 @@ angular
       }
 
       /**
-       * @param {import('@capacitor/camera').Photos} photo
+       * @param {import('@capacitor/camera').Photo} photo
        * @returns {Promise<UserPhoto>}
        */
       async savePicture(photo) {
@@ -53,7 +53,7 @@ angular
 
       /**
        * Convert a Blob to a base64 string.
-       * @param {Photo} photo
+       *@param {import('@capacitor/camera').Photo} photo
        * @returns {string}
        */
       async readAsBase64(photo) {

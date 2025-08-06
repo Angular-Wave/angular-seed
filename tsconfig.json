@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "lib": ["ESNext", "DOM"],
+    "target": "ES2017",
+    "downlevelIteration": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "sourceMap": false,
+    "declaration": false,
+    "incremental": true,
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": ["app"],
+  "exclude": ["node_modules", "**/*.test.js", "**/*.spec.js"]
+}

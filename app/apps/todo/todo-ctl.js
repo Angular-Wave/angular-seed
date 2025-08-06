@@ -1,4 +1,4 @@
-import Todo from "./todo";
+import Todo from "./todo.js";
 
 export default class TodoController {
   constructor() {

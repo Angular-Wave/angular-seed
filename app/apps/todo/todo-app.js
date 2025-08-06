@@ -1,5 +1,5 @@
 import { angular } from "@angular-wave/angular.ts";
-import TodoController from "./todo-ctl";
+import TodoController from "./todo-ctl.js";
 
 /**
  * AngularTS is a multi-paradigm framework that can be adjusted to meet any style.
