@@ -32,6 +32,7 @@
     "@capacitor/filesystem": "latest",
     "@capacitor/preferences": "latest",
     "@capacitor/splash-screen": "latest",
+    "@ionic/core": "6.0.0",
     "@ionic/pwa-elements": "^3.3.0",
     "modern-normalize": "latest",
     "web": "^0.0.2"
