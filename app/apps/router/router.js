@@ -2,13 +2,7 @@ import { angular } from "@angular-wave/angular.ts";
 
 angular.module("router", []).config([
   "$stateProvider",
-  "$locationProvider",
-  ($stateProvider, $locationProvider) => {
-    $locationProvider.html5ModeConf = {
-      enabled: true,
-      requireBase: false,
-      rewriteLinks: false,
-    };
+  ($stateProvider) => {
     $stateProvider
       .state({
         name: "page1",
