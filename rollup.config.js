@@ -8,6 +8,7 @@ import { bundle } from "lightningcss";
 const plugins = [
   html({
     minify: true,
+    flattenOutput: false,
     transformAsset: (_content, filePath) => {
       if (filePath.endsWith(".css")) {
         let { code } = bundle({
