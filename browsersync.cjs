@@ -29,7 +29,7 @@ browserSync.watch(["./app/**/*.js"], async (event) => {
 
 browserSync.watch(["./app/**/*.css"], async (event) => {
   if (event === "change") {
-    await buildCssBundle();
+    // await buildCssBundle();
     await pretty();
   }
 });
@@ -112,8 +112,22 @@ function bundleFileWithDependencies(entry, output) {
 }
 
 function buildCssBundle() {
-  entryList.forEach((entry) => {
-    bundleFileWithDependencies(entry, outputDir);
+  // entryList.forEach((entry) => {
+  //   bundleFileWithDependencies(entry, outputDir);
+  // });
+  return new Promise((resolve) => {
+    exec(
+      "npx @tailwindcss/cli -i ./app/index.css -o ./dist/index.css --watch",
+      (err, _, stderr) => {
+        if (err) {
+          console.error("Error executing custom command:", stderr);
+          resolve();
+          return;
+        }
+        console.log("Pretty successfully");
+        resolve();
+      },
+    );
   });
 }
 

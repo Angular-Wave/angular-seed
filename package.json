@@ -34,7 +34,7 @@
     "@capacitor/splash-screen": "latest",
     "@ionic/core": "8.0.0",
     "@ionic/pwa-elements": "^3.3.0",
-    "modern-normalize": "latest",
+    "@tailwindcss/cli": "^4.1.14",
     "web": "^0.0.2"
   },
   "devDependencies": {
@@ -48,9 +48,11 @@
     "husky": "latest",
     "lightningcss": "latest",
     "lint-staged": "latest",
+    "modern-normalize": "^3.0.1",
     "prettier": "latest",
     "rollup": "latest",
     "serve": "latest",
+    "tailwindcss": "^4.1.14",
     "typescript": "latest"
   },
   "lint-staged": {

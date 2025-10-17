@@ -1,7 +1,6 @@
 /* `ng-cloak` styles to hide angular placeholders */
-@import "./styles/angular.css";
-@import "./styles/modern-normalize.css";
-@import "./styles/fonts.css";
+@import "../node_modules/@angular-wave/angular.ts/css/angular.css";
+@import "tailwindcss";
 
 html,
 body {
@@ -9,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-family: var(--font-family);
+  font-family: var(--font-sans);
 }
 
 #app {

@@ -1,16 +1,7 @@
 import { angular } from "@angular-wave/angular.ts";
+import { buttonDirective } from "./ui/button.js";
 
-angular.module("version", []).controller(
-  "VersionController",
-  class VersionController {
-    static $inject = ["$scope"];
-    /** @param {ng.Scope} $scope */
-    constructor($scope) {
-      this.$scope = $scope;
-    }
-    version = angular.version;
-  },
-);
+angular.module("ui", []).directive("button", buttonDirective);
 
 document.addEventListener("DOMContentLoaded", () => {
   if (window.location.hostname === "localhost") {
