@@ -44,11 +44,13 @@
     "@web/dev-server": "latest",
     "@web/rollup-plugin-copy": "latest",
     "@web/rollup-plugin-html": "latest",
+    "browser-sync": "^3.0.4",
     "husky": "latest",
     "lightningcss": "latest",
     "lint-staged": "latest",
     "prettier": "latest",
     "rollup": "latest",
+    "serve": "latest",
     "typescript": "latest"
   },
   "lint-staged": {
