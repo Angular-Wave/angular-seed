@@ -8,7 +8,7 @@ import { bundle } from "lightningcss";
 const plugins = [
   html({
     rootDir: "./app",
-    minify: false,
+    minify: true,
     flattenOutput: false,
     transformAsset: (_content, filePath) => {
       if (filePath.endsWith(".css")) {
@@ -31,16 +31,7 @@ export default [
     input: "./index.html",
     output: {
       dir: "dist",
-      entryFileNames: "[name].js",
-    },
-    plugins: plugins,
-  },
-
-  {
-    input: "./apps/ionic/ionic.html",
-    output: {
-      dir: "dist",
-      entryFileNames: "[name].js",
+      entryFileNames: "[name].[hash].js",
     },
     plugins: plugins,
   },
